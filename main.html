@@ -13,12 +13,12 @@
 		
 </script>
 	
-<form text-aglign:center; action="#" method="post">
-    <label for="">Name</label>
-    <input type="text" id="firstName" name="firstname" placeholder="Name">
+<form action="#" method="post">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="firstname" placeholder="Name">
       
      <label for="email">Email</label>
-     <input type="email" id="email" name="email" placeholder="email">
+     <input type="email" id="email" name="email" placeholder="email" required>
     <label for="gender">Male</label>
     <input type="radio" id="gender"name="gender">
     <label for="gender">Female</label>
@@ -27,8 +27,8 @@
     <br>
     <br>
     <br>
-
-    <select name="caars" id="cars">
+    <label for="cars">CAR</label>
+    <select name="cars" id="cars">
         
         <option>BMW</option> 
         <option>Audi</option> 
@@ -36,21 +36,23 @@
         <option>THAR</option> 
         </select>
         <label for="age">Age</label>
-        <input type="number" name="age" id="age" placeholder="Age" >
-        <label for="date">DOB</label>
-        <input type="date"id="date">
+        <input type="number" name="age" id="age" placeholder="Age" required>
+        <label for="dob">DOB</label>
+        <input type="date"id="dob">
 
-        <label for="contect">Contect Number</label>
-        <input type="tel" id="contect" name="contect_number" placeholder="Enter your Number">
+        <label for="tel">Contact Number</label>
+        <input type="number"id="tel" name="contact_number" placeholder="Enter your Number">
         <br>
         <br>
         <br>
         <label for="password">Password</label>
         
-        <input type="password" id="password" name="password">
+        <input type="password" id="password" name="password" required>
 
         <label for="tos">I agree to terms and conditions</label>
         <input type="checkbox" id="tos" >
+
+        <button id="button" type="submit">Submit</button>
     </form>
 </body>
 
